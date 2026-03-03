@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE GATEWAY</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0; }
+        header { background-color: #4CAF50; color: white; padding: 20px; text-align: center; }
+        nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+        section { padding: 50px 20px; }
+        footer { background-color: #333; color: white; text-align: center; padding: 15px; }
+        .services { display: flex; flex-wrap: wrap; gap: 20px; }
+        .service { flex: 1 1 30%; background-color: #f4f4f4; padding: 20px; border-radius: 8px; }
+        form input, form textarea { width: 100%; padding: 10px; margin: 5px 0; border-radius: 5px; border: 1px solid #ccc; }
+        form button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Business</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>We are a professional business committed to providing top-quality services to our clients.</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Service One</h3>
+            <p>High-quality service to meet your needs.</p>
+        </div>
+        <div class="service">
+            <h3>Service Two</h3>
+            <p>Reliable and efficient solutions for your business.</p>
+        </div>
+        <div class="service">
+            <h3>Service Three</h3>
+            <p>Expert guidance and professional support.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 My Business. All rights reserved.</p>
+</footer>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Professional Business</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin:0; padding:0; font-family: 'Roboto', sans-serif; }
+    body { line-height: 1.6; color: #333; }
+
+    /* Header / Navbar */
+    header { 
+      background: #1a73e8; 
+      color: white; 
+      padding: 20px 0; 
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+    nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+    .hero button { padding: 12px 30px; font-size: 1rem; border: none; border-radius: 5px; background-color: #ff9900; color: white; cursor: pointer; }
+    .hero button:hover { background-color: #e68a00; }
+
+    /* Sections */
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 40px; color: #1a73e8; }
+
+    /* About */
+    .about { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+    .about img { flex: 1; max-width: 500px; border-radius: 10px; }
+    .about div { flex: 1; }
+
+    /* Services */
+    .services { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .service { flex: 1 1 250px; background: #f4f4f4; padding: 30px; border-radius: 10px; text-align: center; transition: transform 0.3s; }
+    .service:hover { transform: translateY(-10px); }
+    .service i { font-size: 40px; color: #1a73e8; margin-bottom: 15px; }
+
+    /* Contact Form */
+    form { max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
+    form input, form textarea { padding: 12px; border-radius: 5px; border: 1px solid #ccc; }
+    form button { padding: 12px; border: none; border-radius: 5px; background-color: #1a73e8; color: white; font-size: 1rem; cursor: pointer; }
+    form button:hover { background-color: #155ab6; }
+
+    /* Footer */
+    footer { background: #333; color: white; text-align: center; padding: 30px 20px; }
+    footer a { color: white; margin: 0 10px; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .about { flex-direction: column; text-align: center; }
+      .hero h1 { font-size: 2.2rem; }
+      .hero p { font-size: 1rem; }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div><strong>My Business</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>Professional Solutions for Your Business</h1>
+    <p>We help you grow with expert services and innovative strategies.</p>
+    <button>Get Started</button>
+  </div>
+</div>
+
+<section id="about">
+  <h2>About Us</h2>
+  <div class="about">
+    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=600&q=80" alt="About Us">
+    <div>
+      <p>Our company specializes in delivering top-notch business solutions that empower companies to succeed. We focus on quality, efficiency, and client satisfaction.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service">
+      <i class="fas fa-chart-line"></i>
+      <h3>Business Consulting</h3>
+      <p>Expert advice to improve efficiency and growth for your business.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Web Development</h3>
+      <p>Modern websites and applications to enhance your digital presence.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-bullhorn"></i>
+      <h3>Marketing Strategies</h3>
+      <p>Effective marketing campaigns to reach your target audience.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name EXAMPLE:NABIN" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 My Business. All rights reserved.</p>
+  <div>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Business Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+/* Reset & base */
+* { box-sizing: border-box; margin:0; padding:0; font-family: 'Roboto', sans-serif; }
+body { line-height: 1.6; color:#333; scroll-behavior: smooth; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+/* Navbar */
+header { background:#1a73e8; color:#fff; position:sticky; top:0; z-index:1000; }
+nav { max-width:1200px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:15px 20px; }
+nav a { margin-left:20px; font-weight:bold; transition:0.3s; }
+nav a:hover { text-decoration: underline; }
+
+/* Hero */
+.hero { background:url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; height:90vh; display:flex; justify-content:center; align-items:center; text-align:center; color:#fff; }
+.hero h1 { font-size:3rem; margin-bottom:20px; animation: fadeInDown 1s; }
+.hero p { font-size:1.2rem; margin-bottom:30px; animation: fadeInUp 1s; }
+.hero button { padding:12px 30px; border:none; border-radius:5px; background:#ff9900; cursor:pointer; transition:0.3s; }
+.hero button:hover { background:#e68a00; }
+
+/* About */
+section { padding:60px 20px; max-width:1200px; margin:auto; }
+h2 { text-align:center; margin-bottom:40px; color:#1a73e8; }
+.about { display:flex; flex-wrap:wrap; gap:20px; align-items:center; }
+.about img { flex:1; border-radius:10px; }
+.about div { flex:1; }
+
+/* Services */
+.services { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.service { flex:1 1 250px; background:#f4f4f4; padding:30px; border-radius:10px; text-align:center; transition: transform 0.3s; }
+.service:hover { transform:translateY(-10px); }
+.service i { font-size:40px; color:#1a73e8; margin-bottom:15px; }
+
+/* Portfolio */
+.portfolio { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.portfolio-item { flex:1 1 300px; position:relative; overflow:hidden; border-radius:10px; cursor:pointer; }
+.portfolio-item img { transition: transform 0.5s; }
+.portfolio-item:hover img { transform: scale(1.1); }
+.portfolio-item .overlay { position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(26,115,232,0.7); color:#fff; display:flex; justify-content:center; align-items:center; opacity:0; transition:opacity 0.3s; text-align:center; padding:20px; }
+.portfolio-item:hover .overlay { opacity:1; }
+
+/* Testimonials */
+.testimonials { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.testimonial { flex:1 1 300px; background:#f4f4f4; padding:20px; border-radius:10px; text-align:center; font-style:italic; }
+
+/* Contact */
+form { max-width:600px; margin:auto; display:flex; flex-direction:column; gap:15px; }
+form input, form textarea { padding:12px; border-radius:5px; border:1px solid #ccc; }
+form button { padding:12px; border:none; border-radius:5px; background:#1a73e8; color:white; cursor:pointer; transition:0.3s; }
+form button:hover { background:#155ab6; }
+
+/* Footer */
+footer { background:#333; color:#fff; text-align:center; padding:30px 20px; }
+footer a { margin:0 10px; color:#fff; }
+footer a:hover { text-decoration: underline; }
+
+/* Animations */
+@keyframes fadeInDown { 0% {opacity:0; transform:translateY(-20px);} 100% {opacity:1; transform:translateY(0);} }
+@keyframes fadeInUp { 0% {opacity:0; transform:translateY(20px);} 100% {opacity:1; transform:translateY(0);} }
+
+/* Responsive */
+@media(max-width:768px) { .about { flex-direction:column; text-align:center; } .hero h1{font-size:2.2rem;} .hero p{font-size:1rem;} }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div><strong>Elite Business</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>Elevate Your Business to the Next Level</h1>
+    <p>Expert solutions, innovative strategies, measurable results.</p>
+    <button>Get Started</button>
+  </div>
+</div>
+
+<section id="about">
+  <h2>About Us</h2>
+  <div class="about">
+    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=600&q=80" alt="About Us">
+    <div>
+      <p>We specialize in providing high-end business solutions, combining strategy, technology, and creativity to help you succeed. Our team is committed to excellence and client satisfaction.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service"><i class="fas fa-chart-line"></i><h3>Business Consulting</h3><p>Expert advice for growth and efficiency.</p></div>
+    <div class="service"><i class="fas fa-laptop-code"></i><h3>Web Development</h3><p>Modern, responsive websites & apps.</p></div>
+    <div class="service"><i class="fas fa-bullhorn"></i><h3>Marketing</h3><p>Effective strategies to reach your audience.</p></div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h2>Our Portfolio</h2>
+  <div class="portfolio">
+    <div class="portfolio-item">
+      <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=400&q=80" alt="Project 1">
+      <div class="overlay"><p>Project One: Web Design</p></div>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://images.unsplash.com/photo-1581091870623-0e485ed3e2ec?auto=format&fit=crop&w=400&q=80" alt="Project 2">
+      <div class="overlay"><p>Project Two: Marketing Campaign</p></div>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://images.unsplash.com/photo-1581092336365-0e307f228a53?auto=format&fit=crop&w=400&q=80" alt="Project 3">
+      <div class="overlay"><p>Project Three: App Development</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>Client Testimonials</h2>
+  <div class="testimonials">
+    <div class="testimonial">"Outstanding service! Our business has grown significantly thanks to their team."</div>
+    <div class="testimonial">"Professional, reliable, and innovative. Highly recommended!"</div>
+    <div class="testimonial">"Their strategies truly made a difference. Exceptional experience."</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 Elite Business. All rights reserved.</p>
+  <div>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyShop - Online Shopping</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+/* Header */
+header {
+    background: #1e293b;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.search-box {
+    display: flex;
+    width: 40%;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-box button {
+    padding: 8px 15px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.header-buttons button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.login-btn {
+    background: #f59e0b;
+    color: white;
+}
+
+.camera-btn {
+    background: #dc2626;
+    color: white;
+}
+
+/* Products Section */
+.products {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.price {
+    color: #16a34a;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.add-cart {
+    margin-top: 10px;
+    background: #2563eb;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1e293b;
+    color: white;
+    margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">MyShop</div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search products...">
+        <button>Search</button>
+    </div>
+
+    <div class="header-buttons">
+        <button class="camera-btn" onclick="openCamera()">📷 Camera</button>
+        <button class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+        <button class="login-btn">Login</button>
+    </div>
+</header>
+
+<section class="products">
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Product">
+        <h3>Smartphone</h3>
+        <div class="price">$499</div>
+        <button class="add-cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Product">
+        <h3>Headphones</h3>
+        <div class="price">$99</div>
+        <button class="add-cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Product">
+        <h3>Laptop</h3>
+        <div class="price">$899</div>
+        <button class="add-cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 MyShop | All Rights Reserved
+</footer>
+
+<script>
+let cartCount = 0;
+
+function addToCart() {
+    cartCount++;
+    document.getElementById("cart-count").innerText = cartCount;
+    alert("Product added to cart!");
+}
+
+function openCamera() {
+    navigator.mediaDevices.getUserMedia({ video: true })
+    .then(stream => {
+        alert("Camera opened successfully!");
+        stream.getTracks().forEach(track => track.stop());
+    })
+    .catch(err => {
+        alert("Camera access denied or not available.");
+    });
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nabin Shop - Online Shopping</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+/* Header */
+header {
+    background: #1e293b;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.search-box {
+    display: flex;
+    width: 40%;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-box button {
+    padding: 8px 15px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.header-buttons button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.login-btn {
+    background: #f59e0b;
+    color: white;
+}
+
+.camera-btn {
+    background: #dc2626;
+    color: white;
+}
+
+/* Products Section */
+.products {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.price {
+    color: #16a34a;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.add-cart {
+    margin-top: 10px;
+    background: #2563eb;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1e293b;
+    color: white;
+    margin-top: 40px;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">🛍 Nabin Shop</div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search products...">
+        <button>Search</button>
+    </div>
+
+    <div class="header-buttons">
+        <button class="camera-btn" onclick="openCamera()">📷 Camera</button>
+        <button class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+        <button class="login-btn">Login</button>
+    </div>
+</header>
+
+<section class="products">
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Product">
+        <h3>Smartphone</h3>
+        <div class="price">$499</div>
+        <button class="add-cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Product">
+        <h3>Headphones</h3>
+        <div class="price">$99</div>
+        <button class="add-cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Product">
+        <h3>Laptop</h3>
+        <div class="price">$899</div>
+        <button class="add-cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Nabin Shop | Made by Nabin ❤️
+</footer>
+
+<script>
+let cartCount = 0;
+
+function addToCart() {
+    cartCount++;
+    document.getElementById("cart-count").innerText = cartCount;
+    alert("Product added to cart!");
+}
+
+function openCamera() {
+    navigator.mediaDevices.getUserMedia({ video: true })
+    .then(stream => {
+        alert("Camera opened successfully!");
+        stream.getTracks().forEach(track => track.stop());
+    })
+    .catch(err => {
+        alert("Camera access denied or not available.");
+    });
+}
+</script>
+
+</body>
+</html>
